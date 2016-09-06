@@ -1,23 +1,24 @@
 #!/usr/bin/env python
 
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#   but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-# Mark T. Smith 2016
-#
+"""
+IS2500 course material
+Copyright (C) 2016  Mark T. Smith
 
-# The s6350_iso_read_multiple_blocks program returns data from a 
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+"""
+
+# The s6350_iso_read_multiple_blocks program returns data from a
 # range of contiguous memory blocks in an ISO 15693 complant tag.
 #
 # The program also displays the tag 'security' or lock bit status.
@@ -159,7 +160,7 @@ def getReturnPacket(tiser):
 # The routine will return a list that contains the ISO error
 # code as an integer and the meaning of the error as a string.
 # An error code of 0 means no error (OK or command success).
-# 
+#
 
 def chkErrorISO(rddat):
 
